@@ -1,3 +1,10 @@
 const reactContentRoot = document.getElementById("root");
-const button = React.createElement("button", null, "+1");
-ReactDOM.render(button, reactContentRoot);
+
+const list = React.createElement(
+  "ul",
+  null,
+  React.createElement("li", null, "list item 1"),
+  React.createElement("li", null, "list item 2")
+);
+
+ReactDOM.render(list, reactContentRoot);
