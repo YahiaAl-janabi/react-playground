@@ -1,10 +1,15 @@
-const reactContentRoot = document.getElementById("root");
+const theRoot = document.getElementById("root");
 
-const list = React.createElement(
-  "ul",
-  null,
-  React.createElement("li", null, "list item 1"),
-  React.createElement("li", null, "list item 2")
-);
+const App = () => {
+  const myItem = "the next item";
 
-ReactDOM.render(list, reactContentRoot);
+  return (
+    <ul>
+      <li>item1111</li>
+      <li>item2</li>
+      <li>{myItem.toUpperCase()}</li>
+    </ul>
+  );
+};
+
+ReactDOM.render(<App />, theRoot);
