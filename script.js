@@ -5,12 +5,16 @@ const App = () => {
   const myOtherItem = "This is the other item";
 
   return (
-    <ul>
-      <li>item1111</li>
-      <li>item2</li>
-      <li>{myItem.toUpperCase()}</li>
-      <li>{myOtherItem.substring(12, 17)}</li>
-    </ul>
+    <div>
+      <ul>
+        <li>item1111</li>
+        <li>item2</li>
+        <li>{myItem.toUpperCase()}</li>
+        <li>{myOtherItem.substring(12, 17)}</li>
+      </ul>
+
+      <h1>The title of the page</h1>
+    </div>
   );
 };
 
