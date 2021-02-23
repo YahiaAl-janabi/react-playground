@@ -3,7 +3,7 @@ const theRoot = document.getElementById("root");
 const App = () => {
   const myItem = "the next item";
   const myOtherItem = "This is the other item";
-
+  const theTitle = "This is the title";
   return (
     <div>
       <ul>
@@ -11,9 +11,10 @@ const App = () => {
         <li>item2</li>
         <li>{myItem.toUpperCase()}</li>
         <li>{myOtherItem.substring(12, 17)}</li>
+        <li>{myOtherItem.length}</li>
       </ul>
 
-      <h1>The title of the page</h1>
+      <h1>{theTitle}</h1>
     </div>
   );
 };
