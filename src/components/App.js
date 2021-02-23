@@ -1,4 +1,4 @@
-const theRoot = document.getElementById("root");
+import React from "react";
 
 const App = () => {
   const myItem = "the next item";
@@ -19,4 +19,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, theRoot);
+export default App;
